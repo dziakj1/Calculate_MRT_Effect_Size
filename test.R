@@ -8,6 +8,7 @@ library(stats)
 library(boot)
 source("simulate_mrt_data.R")
 source("calculate_mrt_effect_size.R")
+source("plot_mrt_effect_size.R")
 
 loess_degree <- 1
 loess_span <- 1/4
@@ -40,5 +41,4 @@ ans1 <- calculate_mrt_effect_size(mrt_data,
                                   covariates=c("covariate1","covariate2"))
 
 print(ans1)
-
-
+plot_mrt_effect_size(ans1)
