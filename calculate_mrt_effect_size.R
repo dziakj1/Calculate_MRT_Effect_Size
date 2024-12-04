@@ -14,7 +14,7 @@ calculate_mrt_effect_size <- function(
     standardize = TRUE,
     do_bootstrap = TRUE,
     code_for_no_prompt = 0,
-    code_for_yes_prompt = 0,
+    code_for_yes_prompt = 1,
     boot_replications = 1000,
     confidence_alpha=.05) {
   
